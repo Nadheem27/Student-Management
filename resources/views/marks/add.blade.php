@@ -18,7 +18,7 @@
                                     </label>
                                     <div class="col-md-8">
                                         <select class="form-control" name="student" required>
-                                            <option selected disabled>-- Please Select Student --</option>
+                                            <option selected disabled value="">-- Please Select Student --</option>
                                             @foreach ($students as $student)
                                                 <option value="{{ $student->id }}" {{ $student->id == old('student') ? 'selected' : '' }}>{{ $student->name }}</option>
                                             @endforeach
